@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Static Website</title>
+  <meta name="description" content="A simple static website built with HTML and CSS." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#">SimpleSite</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Welcome to SimpleSite</h1>
+        <p>A clean, responsive static website built with semantic HTML and modern CSS.</p>
+        <p><a class="btn" href="#features">Learn more</a></p>
+      </div>
+    </section>
+
+    <section id="features" class="container features">
+      <h2>Features</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Responsive</h3>
+          <p>Layouts adapt to different screen sizes using CSS Grid and media queries.</p>
+        </article>
+        <article class="card">
+          <h3>Accessible</h3>
+          <p>Uses semantic HTML, proper landmarks, and readable color contrast.</p>
+        </article>
+        <article class="card">
+          <h3>Easy to customize</h3>
+          <p>Well-structured CSS with variables so you can change the theme quickly.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h2>About</h2>
+      <p>This repository contains a minimal static website suitable as a starter template for small projects, demos, or learning HTML/CSS.</p>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h2>Contact</h2>
+      <p>If you want to deploy or extend this site, open an issue in the repository or create a pull request with your changes.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> SimpleSite — Built with HTML &amp; CSS</p>
+    </div>
+  </footer>
+
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
